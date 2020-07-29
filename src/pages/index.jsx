@@ -37,6 +37,9 @@ class helloMyApp extends React.Component{
         return(
             <div>
               <input type="text" value={this.state.applyNum} placeholder="开始输入" onChange={this.handleInput} />
+              <div>
+                  id
+              </div>
             </div>
         )
     }
