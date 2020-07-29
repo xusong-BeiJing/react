@@ -4,7 +4,6 @@ class Login extends React.Component {
         return (
             <div>
                 123
-
                 weilai
             </div>
         )
