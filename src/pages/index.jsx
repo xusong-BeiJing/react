@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-class helloMyApp extends React.Component{
+
+class Home extends React.Component{
     // static propTypes = '首页'
     state={
         applyNum:''
@@ -45,4 +45,4 @@ class helloMyApp extends React.Component{
     }
  
 }
-export default helloMyApp;
+export default Home;
