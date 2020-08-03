@@ -6,7 +6,6 @@ import {
     Route,
     Link
   } from "react-router-dom";
-// import { Router, Route, Redirect, IndexRoute, browserHistory, hashHistory } from 'react-router-dom';
 import home from "../pages/index"
 import attention from "../pages/index"
 

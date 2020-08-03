@@ -1,6 +1,6 @@
 import React from 'react';
-
-
+import { Carousel } from 'antd';
+import Tabar from "../component/Tabar"
 class Home extends React.Component{
     // static propTypes = '首页'
     state={
@@ -13,33 +13,26 @@ class Home extends React.Component{
             id:10,
         }
     }
-    // 正则验证
-    testInput = val =>{
-        if(/^[A-Za-z0-9]+$/.test(val)) {
-            return val += val
-        }else{
-            return val 
-        }
-    }
-
-    //点击验证
-    handleInput = event =>{
-        let value = event.target.value;
-        let me= this;
-        this.setState({
-            applyNum:me.testInput(value),
-        },()=>{
-            console.log('value',me.state.applyNum)
-        })
-        
-    }
+    
     render(){
+        const contentStyle = {
+            height: '160px',
+            color: '#fff',
+            lineHeight: '160px',
+            textAlign: 'center',
+            background: '#364d79',
+          };
         return(
             <div>
-              <input type="text" value={this.state.applyNum} placeholder="开始输入" onChange={this.handleInput} />
-              <div>
-                  id
-              </div>
+                <Carousel>
+                    <div>
+                        <h3 style={contentStyle}>1</h3>
+                    </div>
+                    <div>
+                        <h3 style={contentStyle}>2</h3>
+                    </div>
+                </Carousel>
+                <Tabar></Tabar>
             </div>
         )
     }
