@@ -1,6 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Carousel } from 'antd';
 import Tabar from "../component/Tabar"
+// import Test from "../component/Test/index"
+import LayOut from "../component/LayOut"
 class Home extends React.Component{
     // static propTypes = '首页'
     state={
@@ -24,15 +27,22 @@ class Home extends React.Component{
           };
         return(
             <div>
-                <Carousel>
-                    <div>
-                        <h3 style={contentStyle}>1</h3>
-                    </div>
-                    <div>
-                        <h3 style={contentStyle}>2</h3>
-                    </div>
-                </Carousel>
-                <Tabar></Tabar>
+                <LayOut.header>
+                    <div>123123</div>
+                </LayOut.header>
+                <LayOut.body>
+                    <Carousel>
+                        <div>
+                            <h3 style={contentStyle}>1</h3>
+                        </div>
+                        <div>
+                            <h3 style={contentStyle}>2</h3>
+                        </div>
+                    </Carousel>
+                </LayOut.body>
+                <LayOut.footer>
+                    <Tabar></Tabar>
+                </LayOut.footer>
             </div>
         )
     }

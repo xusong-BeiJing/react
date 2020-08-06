@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Router from "../src/router/index"
-// import ReactDOM, { render } from 'react-dom';
-// import { DatePicker } from 'antd';
+import "../src/style/index.css"
 import 'antd/dist/antd.css'
 function App() {
   return (

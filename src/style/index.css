@@ -1,0 +1,19 @@
+.tabar{
+    background-color: red;
+    height:64px;
+    position: relative;
+    bottom:0;
+    z-index:999;
+}
+.title{
+    width:100%;
+    background:red;
+}
+.body{
+    width:100%;
+    background:grey;
+}
+.footer{
+    width:100%;
+    background: greenyellow;
+}
